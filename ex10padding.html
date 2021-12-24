@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        color: white;
+      }
+      #red {
+        background-color: red;
+      }
+      #blue {
+        background-color: blue;
+        padding-left: 100px;
+      }
+      #green {
+        background-color: green;
+        padding-left: 200px;
+      }
+      #gray {
+        background-color: gray;
+        padding-left: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- css는 boxmodel이다! -->
+    <!-- 
+        Box Model : 요소의 부피감을 결정하는 개념(웹페이지 레이아웃, 디자인 설계시)
+        1. width : 요소의 너비 지정
+        2. height : 요소의 높이 지정
+        3. background-color : 박스 모델 색 지정
+        4. border : 경계선 스타일 지정
+        5. margin : 경계선의 바깥 여백 지정
+        6. padding : 경계선의 안쪽 여백 지정
+     -->
+
+    <!--
+        margin -> 바깥여백
+        1. margin : 10px; = 모든방향에 적용
+        2. margin : 10px  10px; = 첫번째10은 top,bottom 두번째 10d은 right, left
+        3. margin : 10px 10px 10px; = 첫번째 10은 top, 두번째는 right,left, 마지막은 bottom
+        4. margin : 10px  10px, 10px 10px= 순서대로 top, right, bottom, left
+        5. margin : auto; = 웹페이지 가운데 위치
+
+        ---------------------------------------------
+        margin - top : 10px
+        margin - bottom : 10px
+        margin - left : 10px
+        margin - right : 10px
+        이런식으로도 줄 수 있다.
+       -->
+
+    <!-- 
+         padding -> margin과 사용방법이 똑같다.
+         ->>단 margin과 다르게 padding은 안쪽여백이다.
+         ->>안쪽여백을 결정하기 때문에 컨텐츠의 색깔을 따라간다
+        -->
+
+    <div id="red">빨간상자</div>
+    <div id="blue">파란상자</div>
+    <div id="green">초록상자</div>
+    <div id="gray">회색상자</div>
+  </body>
+</html>
